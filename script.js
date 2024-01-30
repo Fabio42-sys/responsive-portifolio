@@ -1,4 +1,5 @@
 const mode = document.getElementById('mode-icon');
+const body = document.body
 
 mode.addEventListener('click', () => {
       if(mode.classList.contains('fa-moon')) {
@@ -11,5 +12,6 @@ mode.addEventListener('click', () => {
 });
 
 mode.addEventListener('click', () => {
-      
+      body.classList.toggle('light-mode');
+      body.classList.toggle('dark-mode');
 })
